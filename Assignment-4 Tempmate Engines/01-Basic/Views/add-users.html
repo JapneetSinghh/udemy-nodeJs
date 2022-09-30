@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/form.css">
+  <title>Add User</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Users</a></li>
+        <li><a href="/add-users">Add User</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- User List -->
+  <main class="main">
+    <h1>Add User</h1>
+    <form action="/userAdded" method="POST">
+      <input type="text" placeholder="Enter Username..." name="username">
+      <input type="password" name="password" placeholder="Enter Password...">
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+</body>
+</html>
