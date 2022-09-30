@@ -1,0 +1,15 @@
+
+  <%- include('include/head.ejs') %>
+  <body>
+    <%- include('include/navbar.ejs') %>
+    
+  <!-- User List -->
+  <main class="main">
+    <h1>Add User</h1>
+    <form action="/userAdded" method="POST">
+      <input type="text" placeholder="Enter Username..." name="username">
+      <input type="password" name="password" placeholder="Enter Password...">
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+ <%- include('include/end.ejs')%>
